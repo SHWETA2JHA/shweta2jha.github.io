@@ -1,0 +1,569 @@
+/* Modern portfolio theme */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --accent: #a78bfa;
+  --accent-bright: #c4b5fd;
+  --accent-deep: #7c3aed;
+  --accent-rose: #f0abfc;
+  --bg-dark: #0c0a12;
+  --bg-card: #ffffff;
+  --bg-muted: #f4f0ff;
+  --text-primary: #1e1b2e;
+  --text-muted: #6b7280;
+  --text-light: #e8e4f5;
+  --gradient-hero: linear-gradient(135deg, rgba(12, 10, 18, 0.92) 0%, rgba(76, 29, 149, 0.55) 100%);
+  --shadow-soft: 0 10px 40px rgba(124, 58, 237, 0.12);
+  --shadow-photo: 0 24px 48px rgba(0, 0, 0, 0.35);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+}
+
+body,
+p,
+li,
+a,
+span,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+.universal-h2,
+.top-banner__inner .top-banner__h2,
+.portfolio-wrapper .portfolio__name span,
+.section-title,
+#resume .card-header h4,
+.single-blog .single-blog__text h4 {
+  font-family: "Cormorant Garamond", serif !important;
+}
+
+body {
+  background-color: #faf9fc;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+.fh5co-top-banner {
+  min-height: auto !important;
+  padding-top: 100px !important;
+  padding-bottom: 2rem;
+}
+
+.fh5co-top-banner::after {
+  background: var(--gradient-hero);
+  opacity: 1;
+}
+
+.top-banner__inner {
+  gap: 2rem;
+  padding: 1rem 0 2rem;
+}
+
+.top-banner__inner .top-banner__image {
+  flex: 0 0 auto;
+  width: 220px;
+  max-width: 28%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-photo);
+  border: 2px solid rgba(167, 139, 250, 0.35);
+  line-height: 0;
+}
+
+.top-banner__inner .top-banner__image img {
+  width: 100% !important;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 12%;
+  display: block;
+}
+
+.top-banner__inner .top-banner__h2 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #fff 30%, var(--accent-bright) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.04em;
+}
+
+.brand-span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-bright);
+}
+
+.top-banner__inner .top-banner__text p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  font-weight: 300;
+  max-width: 460px;
+  margin-bottom: 28px;
+}
+
+.brand-button {
+  padding: 12px 28px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-deep), var(--accent-rose));
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-button:hover,
+.brand-button:focus {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.45);
+}
+
+/* About */
+.fh5co-about-me {
+  margin: 120px 0 140px;
+}
+
+.about-me-bckg::after {
+  background: linear-gradient(160deg, rgba(12, 10, 18, 0.85), rgba(91, 33, 182, 0.65));
+  opacity: 1;
+}
+
+.portfolio-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(167, 139, 250, 0.15);
+}
+
+.portfolio-wrapper .portfolio__img {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.portfolio-wrapper .portfolio__img img,
+.about-me__profile {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.portfolio-wrapper .portfolio__bottom {
+  background: var(--bg-muted);
+}
+
+.portfolio-wrapper .portfolio__name span {
+  color: var(--accent-deep);
+  font-size: 5rem;
+  line-height: 0.85;
+}
+
+.portfolio-wrapper p {
+  color: var(--text-muted);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.about-me__text p {
+  color: var(--accent-bright);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.about-me__text .universal-h2 {
+  color: #fff;
+}
+
+/* Accent color overrides */
+.brand-span,
+.span-arrow,
+.single-book__price,
+.single-blog .single-blog__text span,
+.fh5co-quotes h4,
+.about-me__text h4,
+.footer-info .footer-info__left p,
+.footer-bottom-inner a {
+  color: var(--accent-deep) !important;
+}
+
+.bar1, .bar2, .bar3,
+.change .bar1,
+.change .bar2,
+.change .bar3 {
+  background-color: var(--accent) !important;
+}
+
+.span-arrow {
+  border-color: var(--accent);
+}
+
+.span-arrow:hover {
+  border-color: var(--accent-deep);
+  color: var(--accent-deep) !important;
+}
+
+.single-blog:nth-child(even) h4 {
+  color: var(--accent-deep) !important;
+}
+
+/* Cards section */
+.about-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #faf9fc 0%, #f0ebff 100%);
+}
+
+.section-title {
+  color: var(--accent-deep) !important;
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(167, 139, 250, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(124, 58, 237, 0.15);
+}
+
+.about-card .line,
+.about-card .line.mb-5 {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-deep), var(--accent-rose));
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
+}
+
+.about-card .info li span {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
+.accent-link {
+  color: var(--accent-deep) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.accent-link:hover {
+  color: var(--accent-rose) !important;
+}
+
+.about-card h6 {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.about-card .subtitle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.about-card .text-danger,
+.about-card .text-danger i {
+  color: var(--accent-deep) !important;
+}
+
+.social-icons .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--bg-muted);
+  color: var(--accent-deep);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons .social-link:hover {
+  background: var(--accent-deep);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+/* Resume */
+#resume {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+#resume .card {
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(167, 139, 250, 0.1);
+}
+
+#resume .card-header {
+  background: linear-gradient(135deg, var(--accent-deep), #9333ea);
+  color: #fff;
+  border: none;
+  padding: 1.25rem 1.5rem;
+}
+
+#resume .card-header h4 {
+  color: #fff !important;
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#resume .card-header .line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
+}
+
+#resume .card-body {
+  padding: 1.5rem;
+}
+
+#resume .title,
+#resume h6.title {
+  color: var(--accent-deep) !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+#resume .card-body p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+#resume .progress-bar.bg-danger {
+  background: linear-gradient(90deg, var(--accent-deep), var(--accent-rose)) !important;
+}
+
+/* Projects */
+.fh5co-blog {
+  margin-bottom: 120px;
+  padding-top: 2rem;
+}
+
+.fh5co-blog .universal-h2 {
+  color: var(--text-primary);
+}
+
+.blog-slider .slick-track {
+  display: flex !important;
+  align-items: stretch;
+}
+
+.blog-slider .slick-slide {
+  display: flex !important;
+  height: auto;
+}
+
+.blog-slider .slick-slide > div {
+  display: flex;
+  width: 100%;
+}
+
+.single-blog {
+  flex-direction: column !important;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(167, 139, 250, 0.12);
+}
+
+.single-blog .single-blog__img {
+  width: 100% !important;
+  flex: 0 0 auto;
+  height: 200px;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, #faf8ff 0%, #f3eeff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.single-blog .single-blog__img img {
+  width: 100%;
+  height: 100%;
+  min-height: unset !important;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.single-blog .single-blog__text {
+  width: 100% !important;
+  flex: 1;
+  border: none !important;
+  border-top: 1px solid rgba(167, 139, 250, 0.12) !important;
+  padding: 1.25rem 1.5rem 1.5rem !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-blog .single-blog__text h4 {
+  font-family: "Cormorant Garamond", serif !important;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin-bottom: 0.35rem;
+}
+
+.single-blog .single-blog__text span {
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.single-blog .single-blog__text p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.github-cta {
+  color: var(--accent-deep);
+  font-size: 1rem;
+}
+
+.github-cta a {
+  color: var(--accent-deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-bright);
+  transition: border-color 0.2s ease;
+}
+
+.github-cta a:hover {
+  border-color: var(--accent-deep);
+}
+
+@media (max-width: 1250px) {
+  .single-blog .single-blog__img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+}
+
+/* Responsive photo sizing */
+@media (max-width: 1250px) {
+  .fh5co-top-banner {
+    padding-top: 80px !important;
+  }
+
+  .top-banner__inner .top-banner__image {
+    width: 190px;
+    max-width: 34%;
+  }
+
+  .top-banner__inner .top-banner__image img {
+    height: 240px;
+  }
+
+  .top-banner__inner .top-banner__h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fh5co-top-banner {
+    padding-top: 70px !important;
+  }
+
+  .top-banner__inner .top-banner__image {
+    width: 170px;
+    max-width: 40%;
+  }
+
+  .top-banner__inner .top-banner__image img {
+    height: 210px;
+  }
+
+  .top-banner__inner .top-banner__h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-wrapper .portfolio__img img,
+  .about-me__profile {
+    height: 240px;
+  }
+
+  .single-blog .single-blog__img {
+    height: 170px;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-banner__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .top-banner__inner .top-banner__image {
+    width: 160px;
+    max-width: 60%;
+    margin-bottom: 0;
+  }
+
+  .top-banner__inner .top-banner__image img {
+    height: 200px;
+  }
+
+  .top-banner__inner .top-banner__text {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .top-banner__inner .top-banner__text-down {
+    padding-left: 0;
+  }
+
+  .top-banner__inner .top-banner__text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .single-blog .single-blog__img {
+    height: 160px;
+  }
+
+  .single-blog .single-blog__text {
+    padding: 1rem 1.1rem 1.25rem !important;
+  }
+}
